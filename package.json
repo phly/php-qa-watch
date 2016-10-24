@@ -1,6 +1,6 @@
 {
   "name": "phly-php-qa-watch",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Watch a PHP project for changes, and execute QA tools.",
   "keywords": [
     "php",

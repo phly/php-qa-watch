@@ -1,0 +1,37 @@
+{
+  "name": "phly-php-qa-watch",
+  "version": "0.1.0",
+  "description": "Watch a PHP project for changes, and execute QA tools.",
+  "keywords": [
+    "php",
+    "qa",
+    "automation"
+  ],
+  "homepage": "https://github.com/phly/php-qa-watch",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/phly/php-qa-watch"
+  },
+  "bugs": "https://github.com/phly/php-qa-watch/issues",
+  "license": "BSD-2-Clause",
+  "author": {
+    "name": "Matthew O'Phinney",
+    "url": "https://mwop.net/"
+  },
+  "contributors": [
+    {
+      "name": "Matthew O'Phinney",
+      "url": "https://mwop.net/"
+    }
+  ],
+  "main": "index.js",
+  "bin": {
+    "php-qa-watch": "./index.js"
+  },
+  "dependencies": {
+    "chokidar": "^1.6.1",
+    "colors": "^1.1.2",
+    "commander": "^2.9.0",
+    "node-notifier": "^4.6.1"
+  }
+}

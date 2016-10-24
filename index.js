@@ -44,9 +44,21 @@ function now() {
 program
   .version('0.1.0')
   .usage('[options]')
-  .option('-d, --no-notifications', 'Disable notifications when test failures occur')
-  .option('-w, --watch-files [files]', 'Specify files/directories/globs to watch, as a comma-separated list', list, defaultWatchFiles) 
-  .option('-c, --check-command [command]', 'Specify the check command to run, with all arguments', defaultCommand)
+  .option(
+    '-d, --no-notifications',
+    'Disable notifications when test failures occur'
+  )
+  .option(
+    '-w, --watch-files [files]',
+    'Specify files/directories/globs to watch, as a comma-separated list; defaults to: "phpunit.xml.dist,phpcs.xml,src/**/*.php,test/**/*.php"',
+    list,
+    defaultWatchFiles
+  ) 
+  .option(
+    '-c, --check-command [command]',
+    'Specify the check command to run, with all arguments; defaults to "composer check"',
+    defaultCommand
+  )
   .parse(process.argv);
 
 console.info(colors.green('[%s] Watching %s'), now().toISOString(), pwd);

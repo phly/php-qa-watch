@@ -21,6 +21,8 @@ All notable changes to this project will be documented in this file, in reverse 
 - [#1](https://github.com/phly/php-qa-watch/pull/1) ensures that the `process`
   module is present on systems where it is not in the default node/npm
   installation.
+- [#2](https://github.com/phly/php-qa-watch/pull/2) ensures that the current
+  working directory can be discovered when working on a Windows platform.
 
 ## 0.1.1 - 2016-10-24
 

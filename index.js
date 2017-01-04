@@ -26,7 +26,7 @@ var exec = require('child_process').exec;
 var program = require('commander');
 var notifier = require('node-notifier');
 
-var pwd = require('process').env.PWD;
+var pwd = require('process').cwd();
 var project = require('path').posix.basename(pwd);
 var errorIcon = __dirname + '/error.png';
 var defaultWatchFiles = ['phpunit.xml.dist', 'phpcs.xml', 'src/**/*.php', 'test/**/*.php'];
